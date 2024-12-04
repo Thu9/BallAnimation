@@ -1,0 +1,61 @@
+/*ball animation*/
+.canvas-ball-container {
+  width: fit-content;
+  margin-bottom: 64px;
+}
+
+.canvas-circle {
+  display: block;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 30%);
+  background-color: #131211;
+}
+
+/*code animation */
+.code-container {
+  font-family: "D2coding", monospace;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  background-color: transparent;
+  user-select: none;
+}
+
+.code-slide {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.code-slide-add {
+  transform: scale(1.1);
+  opacity: 1;
+  animation: highlight-animation 0.2s ease-in-out forwards;
+}
+
+.code-text {
+  color: #c1cccc;
+}
+
+@keyframes highlight-animation {
+  0% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  /* #canvas-ball {
+    width: 588px;
+    height: 588px;
+  } */
+}
